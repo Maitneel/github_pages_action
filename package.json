@@ -15,9 +15,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "npx tsc"
   },
   "dependencies": {
-    "tsc": "^2.0.4"
+    "typescript": "^5.9.3"
   }
 }
