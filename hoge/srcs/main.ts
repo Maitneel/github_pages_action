@@ -1,5 +1,5 @@
 function hello(): string {
-  return "hello";
+  return "hello!!";
 }
 
 function main(): void {
