@@ -23,4 +23,4 @@ jobs:
           ls 
           gh --version
           echo $TAGzip 
-          gh release create ${TAG} ./zip/*
+          gh release create ${TAG} `find ./zip -type file`
