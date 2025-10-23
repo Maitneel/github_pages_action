@@ -18,8 +18,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           export TAG=`date +"%Y%m%d-%H%M%S"`
-          export RELEASE_FILE=release-$TAG.zip
-          zip ${RELEASE_FILE} -r ./zip
+          #export RELEASE_FILE=release-$TAG.zip
+          #zip ${RELEASE_FILE} -r ./zip
           echo $TAGzip 
           gh --version
-          gh release create ${TAG} ${RELEASE_FILE}
+          gh release create ${TAG} ./zip
