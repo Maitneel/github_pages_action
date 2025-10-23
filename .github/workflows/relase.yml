@@ -17,4 +17,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          export TAG=`date +"%Y%m%d-%H%M%S"`
           gh --version
+          gh release create ${TAG} ./srcs
