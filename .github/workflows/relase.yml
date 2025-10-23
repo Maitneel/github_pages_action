@@ -18,5 +18,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           export TAG=`date +"%Y%m%d-%H%M%S"`
+          ls
+          echo $TAG
           gh --version
           gh release create ${TAG} zip/
