@@ -20,6 +20,7 @@ jobs:
           export TAG=`date +"%Y%m%d-%H%M%S"`
           #export RELEASE_FILE=release-$TAG.zip
           #zip ${RELEASE_FILE} -r ./zip
-          echo $TAGzip 
+          ls 
           gh --version
-          gh release create ${TAG} ./zip
+          echo $TAGzip 
+          gh release create ${TAG} ./zip/*
