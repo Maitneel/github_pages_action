@@ -19,4 +19,4 @@ jobs:
         run: |
           export TAG=`date +"%Y%m%d-%H%M%S"`
           gh --version
-          gh release create ${TAG} ./srcs
+          gh release create ${TAG} zip/
